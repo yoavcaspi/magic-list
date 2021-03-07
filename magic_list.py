@@ -6,4 +6,4 @@ class MagicList(UserList):
         if len(self.data) == i or i == -1:
             self.data.append(item)
         else:
-            self.data[i] = item
+            super().__setitem__(i, item)
