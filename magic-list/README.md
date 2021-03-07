@@ -7,5 +7,5 @@ from magic_list import MagicList
 
 
 # How to test
-pip install requirements_dev.txt
+pip install -rrequirements_dev.txt
 pytest tests
