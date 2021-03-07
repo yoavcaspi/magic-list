@@ -12,6 +12,14 @@ def test_skip_boundary_check_with_0():
     assert a[0] == 5
 
 
+def test_skip_boundary_check_with_minus_one():
+    # Given a magic list
+    # When accessing it with "valid"  boundary check
+    # We wish to add the value to the list.
+    a = MagicList()
+    a[-1] = 5
+
+
 @pytest.mark.parametrize("val", range(2, 10))
 def test_skip_boundary_check_with_bigger_gap(val):
     # Given a magic list
